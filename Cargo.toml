@@ -1,0 +1,8 @@
+[package]
+name = "yaisd"
+version = "0.1.0"
+edition = "2021"
+authors = ["Kirill Leonov <leonov7632@gmail.com>"]
+
+[dependencies]
+clap = { version = "4.5.11", features = ["derive"] }
