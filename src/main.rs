@@ -1,4 +1,5 @@
 use clap::Parser;
+mod process_manager;
 
 #[derive(Parser)]
 #[command(author, version, about, long_about = None)]
@@ -14,6 +15,6 @@ fn main() {
     if cli.update {
         println!("run update");
     } else {
-        println!("run");
+        process_manager::run();
     }
 }
