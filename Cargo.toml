@@ -1,9 +1,10 @@
 [package]
 name = "yaisd"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Kirill Leonov <leonov7632@gmail.com>"]
 
 [dependencies]
 clap = { version = "4.5.11", features = ["derive"] }
 self_update = { version = "0.41.0", features = ["archive-tar", "archive-zip", "compression-flate2"] }
+openssl = { version = "0.10.59", features = ["vendored"] }
