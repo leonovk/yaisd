@@ -21,6 +21,17 @@ pub fn run() {
 }
 
 fn execute(command: String) {
-    let mut exec = Command::new(command);
+    let mut execuitble = Vec::new();
+
+    for word in command.split_whitespace() {
+        execuitble.push(word.to_string());
+    }
+
+    let mut exec = Command::new(&execuitble[0]);
+
+    for arg in execuitble.into_iter().skip(1) {
+        exec.arg(arg);
+    }
+
     exec.output().expect("The command failed");
 }
