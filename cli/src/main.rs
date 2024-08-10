@@ -1,5 +1,5 @@
 use std::env;
-use yaisd_core::process_manager;
+use yaisd_core;
 
 const HELP_STR: &'static str = "run without arguments will start the daemon!
 available commands:
@@ -17,10 +17,10 @@ fn main() {
         } else if c_str == "--help" {
             println!("{}", HELP_STR)
         } else {
-            process_manager::run();
+            yaisd_core::run();
         }
     } else {
-        process_manager::run();
+        yaisd_core::run();
     }
 }
 
