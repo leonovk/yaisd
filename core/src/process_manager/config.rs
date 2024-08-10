@@ -14,7 +14,11 @@ fn parse_commands(path: String) -> Vec<String> {
     let mut result = Vec::new();
 
     for line in contents.lines() {
-        result.push(line.to_string());
+        let com = line.to_string();
+
+        if com.len() > 0 {
+            result.push(com);
+        }
     }
 
     return result;

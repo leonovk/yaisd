@@ -1,6 +1,6 @@
 [package]
 name = "yaisd"
-version = "0.1.7"
+version = "0.1.8"
 edition = "2021"
 authors = ["Kirill Leonov <leonov7632@gmail.com>"]
 
