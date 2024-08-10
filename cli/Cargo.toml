@@ -1,0 +1,12 @@
+[package]
+name = "yaisd"
+version = "0.1.6"
+edition = "2021"
+authors = ["Kirill Leonov <leonov7632@gmail.com>"]
+
+[[bin]]
+name = "yaisd"
+path = "src/main.rs"
+
+[dependencies]
+yaisd_core = { path = "../core" }
