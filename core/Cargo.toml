@@ -1,0 +1,4 @@
+[package]
+name = "yaisd_core"
+edition = "2021"
+authors = ["Kirill Leonov <leonov7632@gmail.com>"]
